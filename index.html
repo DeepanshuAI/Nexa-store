@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA — Mobile &amp; Electronics Store</title>
+  <meta name="description" content="NOVA Electronics — Genuine smartphones, laptops, tablets, smartwatches, audio and accessories. Best prices, expert support, latest technology." />
+
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">
+      <span class="preloader__bracket">[</span>
+      <span class="preloader__logo">NOVA</span>
+      <span class="preloader__bracket">]</span>
+    </div>
+    <div class="preloader__bar"><span></span></div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="brand">
+        <span class="brand__mark">N</span>
+        <span class="brand__name">NOVA<span class="brand__name--accent">.</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#categories" class="nav__link">Categories</a></li>
+          <li><a href="#products" class="nav__link">Products</a></li>
+          <li><a href="#why-us" class="nav__link">Why NOVA</a></li>
+          <li><a href="#reviews" class="nav__link">Reviews</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products" aria-expanded="false">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm navbar__cta">Get Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search panel -->
+    <div class="search-panel" id="searchPanel">
+      <div class="container search-panel__inner">
+        <i class="fa-solid fa-magnifying-glass search-panel__icon"></i>
+        <input type="text" id="searchInput" class="search-panel__input" placeholder="Search smartphones, laptops, audio..." autocomplete="off" />
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__links">
+      <li><a href="#home" class="mobile-nav__link">Home</a></li>
+      <li><a href="#categories" class="mobile-nav__link">Categories</a></li>
+      <li><a href="#products" class="mobile-nav__link">Products</a></li>
+      <li><a href="#why-us" class="mobile-nav__link">Why NOVA</a></li>
+      <li><a href="#reviews" class="mobile-nav__link">Reviews</a></li>
+      <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--primary mobile-nav__cta">Get a Quote</a>
+    <div class="mobile-nav__meta">
+      <p><i class="fa-solid fa-location-dot"></i> 14 MG Road, Pune, MH 411001</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+    </div>
+  </div>
+  <div class="mobile-nav__backdrop" id="mobileNavBackdrop"></div>
+
+  <main>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow reveal" data-reveal="fade-up">
+            <span class="eyebrow__dot"></span> New arrivals every week — Pune's tech destination
+          </p>
+
+          <h1 class="hero__title reveal" data-reveal="fade-up" data-delay="100">
+            Empowering Your World<br />
+            With <span class="text-gradient">Latest Technology</span>
+          </h1>
+
+          <p class="hero__subtitle reveal" data-reveal="fade-up" data-delay="200">
+            From flagship smartphones to studio-grade audio — NOVA brings you genuine,
+            warranty-backed electronics with expert advice and prices that make sense.
+          </p>
+
+          <div class="hero__actions reveal" data-reveal="fade-up" data-delay="300">
+            <a href="#products" class="btn btn--primary btn--lg">
+              Explore Products <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn--ghost btn--lg">
+              Contact Us
+            </a>
+          </div>
+
+          <!-- Signature element: live "spec strip" ticker -->
+          <div class="spec-strip reveal" data-reveal="fade-up" data-delay="400" aria-hidden="true">
+            <div class="spec-strip__track">
+              <span class="spec-strip__item"><i class="fa-solid fa-shield-halved"></i> 1-Year Warranty</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-bolt"></i> Same-Day Delivery</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-rotate"></i> 7-Day Replacement</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-credit-card"></i> EMI Available</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-certificate"></i> 100% Genuine</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-headset"></i> Free Tech Support</span>
+              <!-- duplicate set for seamless loop -->
+              <span class="spec-strip__item"><i class="fa-solid fa-shield-halved"></i> 1-Year Warranty</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-bolt"></i> Same-Day Delivery</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-rotate"></i> 7-Day Replacement</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-credit-card"></i> EMI Available</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-certificate"></i> 100% Genuine</span>
+              <span class="spec-strip__item"><i class="fa-solid fa-headset"></i> Free Tech Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-reveal="fade-in" data-delay="200">
+          <div class="hero__device">
+            <div class="hero__device-glow"></div>
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=900&auto=format&fit=crop"
+                 alt="Latest flagship smartphone with triple camera system" class="hero__device-img" />
+            <div class="hero__float-card hero__float-card--1">
+              <i class="fa-solid fa-camera-retro"></i>
+              <div>
+                <strong>108MP Camera</strong>
+                <span>Pro-grade optics</span>
+              </div>
+            </div>
+            <div class="hero__float-card hero__float-card--2">
+              <i class="fa-solid fa-battery-full"></i>
+              <div>
+                <strong>5000mAh</strong>
+                <span>All-day battery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#categories" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ CATEGORIES SECTION ============ -->
+    <section class="section categories" id="categories">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--alt">Shop by category</p>
+          <h2 class="section__title">Everything Your Digital Life Needs</h2>
+          <p class="section__subtitle">Curated categories of genuine, branded electronics — handpicked for performance, durability and value.</p>
+        </div>
+
+        <div class="cat-grid">
+          <!-- Category cards: glassmorphism + hover lift -->
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="0" data-filter="smartphones">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=600&auto=format&fit=crop" alt="Smartphones" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Smartphones</h3>
+              <p>Flagships &amp; budget picks</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="80" data-filter="laptops">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=600&auto=format&fit=crop" alt="Laptops" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-laptop"></i></div>
+              <h3>Laptops</h3>
+              <p>Work, gaming &amp; creators</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="160" data-filter="tablets">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=600&auto=format&fit=crop" alt="Tablets" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
+              <h3>Tablets</h3>
+              <p>Sketch, stream &amp; study</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="0" data-filter="watches">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?q=80&w=600&auto=format&fit=crop" alt="Smart Watches" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-clock"></i></div>
+              <h3>Smart Watches</h3>
+              <p>Fitness &amp; connectivity</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="80" data-filter="accessories">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=600&auto=format&fit=crop" alt="Accessories" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+              <h3>Accessories</h3>
+              <p>Cases, chargers &amp; more</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+
+          <a href="#products" class="cat-card reveal" data-reveal="fade-up" data-delay="160" data-filter="audio">
+            <div class="cat-card__img">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop" alt="Audio Products" loading="lazy" />
+            </div>
+            <div class="cat-card__body">
+              <div class="cat-card__icon"><i class="fa-solid fa-headphones-simple"></i></div>
+              <h3>Audio</h3>
+              <p>Headphones &amp; speakers</p>
+              <span class="cat-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PRODUCTS SECTION ============ -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section__head section__head--split reveal" data-reveal="fade-up">
+          <div>
+            <p class="eyebrow eyebrow--alt">Featured products</p>
+            <h2 class="section__title">Handpicked This Week</h2>
+            <p class="section__subtitle">Use the filters or search bar to find exactly what you're looking for.</p>
+          </div>
+
+          <!-- Filter controls -->
+          <div class="filters" id="filters" role="tablist" aria-label="Filter products by category">
+            <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="smartphones" role="tab" aria-selected="false">Smartphones</button>
+            <button class="filter-btn" data-filter="laptops" role="tab" aria-selected="false">Laptops</button>
+            <button class="filter-btn" data-filter="tablets" role="tab" aria-selected="false">Tablets</button>
+            <button class="filter-btn" data-filter="watches" role="tab" aria-selected="false">Watches</button>
+            <button class="filter-btn" data-filter="audio" role="tab" aria-selected="false">Audio</button>
+            <button class="filter-btn" data-filter="accessories" role="tab" aria-selected="false">Accessories</button>
+          </div>
+        </div>
+
+        <!-- Product grid: populated from data via JS, with static markup as fallback/SEO -->
+        <div class="product-grid" id="productGrid">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <p class="product-empty" id="productEmpty" hidden>
+          <i class="fa-solid fa-box-open"></i> No products match your search. Try a different keyword or filter.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US SECTION ============ -->
+    <section class="section why-us" id="why-us">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--alt">Why NOVA</p>
+          <h2 class="section__title">Built on Trust, Backed by Service</h2>
+          <p class="section__subtitle">A decade of serving Pune with honest pricing and real after-sales support.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal" data-reveal="fade-up" data-delay="0">
+            <div class="why-card__icon why-card__icon--1"><i class="fa-solid fa-certificate"></i></div>
+            <h3>Genuine Products</h3>
+            <p>Every device is sourced directly from authorized distributors with full manufacturer warranty.</p>
+          </div>
+
+          <div class="why-card reveal" data-reveal="fade-up" data-delay="100">
+            <div class="why-card__icon why-card__icon--2"><i class="fa-solid fa-tags"></i></div>
+            <h3>Best Prices</h3>
+            <p>Transparent pricing, regular bundle deals, and easy EMI options on every major brand.</p>
+          </div>
+
+          <div class="why-card reveal" data-reveal="fade-up" data-delay="200">
+            <div class="why-card__icon why-card__icon--3"><i class="fa-solid fa-headset"></i></div>
+            <h3>Customer Support</h3>
+            <p>Walk-in service desk and WhatsApp support for setup help, repairs and quick replacements.</p>
+          </div>
+
+          <div class="why-card reveal" data-reveal="fade-up" data-delay="300">
+            <div class="why-card__icon why-card__icon--4"><i class="fa-solid fa-microchip"></i></div>
+            <h3>Latest Technology</h3>
+            <p>First in the city to stock new launches — from foldables to next-gen audio gear.</p>
+          </div>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="stats reveal" data-reveal="fade-up">
+          <div class="stat">
+            <span class="stat__num" data-count="12">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Years in Business</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="48000">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Happy Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="250">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Products in Stock</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="98">0</span><span class="stat__suffix">%</span>
+            <span class="stat__label">Satisfaction Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUSTOMER REVIEWS SECTION ============ -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--alt">Testimonials</p>
+          <h2 class="section__title">What Our Customers Say</h2>
+          <p class="section__subtitle">Real feedback from real customers across Pune.</p>
+        </div>
+
+        <div class="review-grid">
+          <div class="review-card reveal" data-reveal="fade-up" data-delay="0">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-card__text">"Bought my iPhone here and the staff helped me transfer all my data for free. Genuinely the best electronics store in the area."</p>
+            <div class="review-card__author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Riya Sharma" loading="lazy" />
+              <div>
+                <strong>Riya Sharma</strong>
+                <span>Verified Buyer · Smartphone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal" data-reveal="fade-up" data-delay="100">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-card__text">"Great price on my gaming laptop and they price-matched an online deal instantly. Will definitely come back for accessories."</p>
+            <div class="review-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Arjun Mehta" loading="lazy" />
+              <div>
+                <strong>Arjun Mehta</strong>
+                <span>Verified Buyer · Laptop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal" data-reveal="fade-up" data-delay="200">
+            <div class="review-card__stars" aria-label="4.5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="review-card__text">"My smartwatch had a minor issue and they replaced it within a day, no questions asked. That's the kind of support that keeps me coming back."</p>
+            <div class="review-card__author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop" alt="Sneha Kulkarni" loading="lazy" />
+              <div>
+                <strong>Sneha Kulkarni</strong>
+                <span>Verified Buyer · Smart Watch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__head reveal" data-reveal="fade-up">
+          <p class="eyebrow eyebrow--alt">Get in touch</p>
+          <h2 class="section__title">Visit, Call, or Message Us</h2>
+          <p class="section__subtitle">Our team typically replies within the hour during store hours.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact info cards -->
+          <div class="contact-info reveal" data-reveal="fade-up" data-delay="0">
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Store Address</h4>
+                <p>NOVA Electronics, Shop 14, Galaxy Plaza,<br />MG Road, Pune, Maharashtra 411001</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@novaelectronics.in">hello@novaelectronics.in</a></p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Store Hours</h4>
+                <p>Mon – Sat: 10:00 AM – 9:00 PM<br />Sunday: 11:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn--whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+
+            <!-- Map -->
+            <div class="contact-map">
+              <iframe
+                title="NOVA Electronics location map"
+                src="https://maps.google.com/maps?q=Pune,Maharashtra&z=14&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form reveal" data-reveal="fade-up" data-delay="150" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+                <span class="form-error" data-error-for="name"></span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" required />
+                <span class="form-error" data-error-for="phone"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">I'm interested in</label>
+              <select id="subject" name="subject">
+                <option value="general">General Enquiry</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="tablets">Tablets</option>
+                <option value="watches">Smart Watches</option>
+                <option value="audio">Audio Products</option>
+                <option value="accessories">Accessories</option>
+                <option value="service">Repair / Service</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
+              <span class="form-error" data-error-for="message"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg form-submit">
+              <span class="form-submit__text">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <p class="form-success" id="formSuccess" hidden>
+              <i class="fa-solid fa-circle-check"></i> Thanks! Your message has been sent — we'll get back to you shortly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="brand">
+          <span class="brand__mark">N</span>
+          <span class="brand__name">NOVA<span class="brand__name--accent">.</span></span>
+        </a>
+        <p>Pune's trusted destination for genuine smartphones, laptops, tablets, audio and accessories since 2014.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why NOVA</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#products" data-filter-link="smartphones">Smartphones</a></li>
+          <li><a href="#products" data-filter-link="laptops">Laptops</a></li>
+          <li><a href="#products" data-filter-link="tablets">Tablets</a></li>
+          <li><a href="#products" data-filter-link="watches">Smart Watches</a></li>
+          <li><a href="#products" data-filter-link="audio">Audio</a></li>
+          <li><a href="#products" data-filter-link="accessories">Accessories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__newsletter">
+        <h4>Stay Updated</h4>
+        <p>Get notified about new arrivals and exclusive in-store offers.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" />
+          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; <span id="year"></span> NOVA Electronics. All rights reserved.</p>
+        <p>Designed for a premium local retail experience.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING ACTION BUTTONS ============ -->
+  <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-whatsapp__pulse"></span>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
